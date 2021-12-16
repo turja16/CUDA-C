@@ -1,0 +1,4 @@
+seven_point_stencil_coarsening_register: seven_point_stencil_coarsening_register_gpu.cu
+	nvcc -arch compute_50 -o seven_point_stencil_coarsening_register_gpu seven_point_stencil_coarsening_register_gpu.cu
+clean:
+	rm -f  seven_point_stencil_coarsening_register_gpu
